@@ -1,0 +1,131 @@
+###NOTE: IN PYTHON INDENTATION IS IMPORTENT IF YOU EVEN MADE ANY INDENTATION MISTAKE DURING THE CODEWRITING YOU WILL GET AN INDENTATION EARROR
+OTHER THEN THAT PYTHON IS SMOOTH AS BUTTER.
+
+
+#how to find perfect square between 1,500
+# we gonna use for loop with if else
+#you can use anything over here instead of i
+
+for i in range(1,500):
+ if i*i <= 500:
+  print(i*i)
+-------------------------------------------------------------------------------------------------------------  
+#find the largest number among 3 or anything
+#when u run this code it will take 3 input from user and give you the biggest num
+#we use input() to take any input from user
+#elif statment used here, if you wanna use if again you could use elif which looks cool however you can use if as well wontchange anything
+
+num1 = float(input("enter 1st num")
+num2 = float(input("enter 2st num")
+num3 = float(input("enter 3st num")
+
+if (num1>num2) and (num1>num3):
+  print("1st is the biggest")
+elif (num2>num1) and (num2>num3):
+  print("2nd is the biggest")
+else:
+  print("third is the biggest")
+-------------------------------------------------------------------------------------------------------------  
+#positive neg num using if else
+#u could use else as well in last statment instead of elif but its ok both works
+
+num = float(input("enter any number")
+if num > 0:
+ print("its positive num")
+elif num = 0:
+ print("its zero")
+elif num < 0:
+ print("its NEG")
+ -------------------------------------------------------------------------------------------------------------
+#even odd using if else 
+#here in 2nd if statment you could use elif statment as well
+x = 8
+r = x%2
+if r == 0:
+  print("its even")
+if r!= 0:
+  print("its not even")
+  
+-------------------------------------------------------------------------------------------------------------
+#while loop
+#if you i+=1 (increment before print(i)) output will be 1 to 9
+#if you i+=1 (incremnet after print(i)) output will be 2 to 10
+i = 1     
+while i < 10:
+   print(i)
+   i+=1
+ -------------------------------------------------------------------------------------------------------------
+ #PATTERNS USING FOR LOOPS AND WITH LESS CODE
+ #I REPRESENT RAW
+ #J REPRESENT COLUMN
+ for i in range(4):   
+  for j in range(4):         
+     print("* ", end+"")       
+  print() 
+    
+    #OUTPUT
+    * * * * 
+    * * * *  
+    * * * * 
+    * * * * 
+for i in range(4):
+ for j in range(4-i):
+    print("* ", end+"")       
+ print()
+ 
+ #OUTPUT
+* * * * 
+* * * 
+* * 
+* 
+
+for i in range(4):
+ for j in range(i):
+    print("* ", end+"")       
+ print() 
+ 
+ #output
+* 
+* * 
+* * *
+		
+		for i in range(4+1):
+  for j in range (i+1):
+    print("* ", end="")
+  print()  
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+#PATTERNS USING NUMBERS
+#IF YOU REPLACE J WITH I IN print(J,end="") you will get output ( B )
+n = int(input("add any num")
+for i in range (i,n+1):
+ for j in range (j , n+1):
+  print(j, end="")
+ print()
+ 
+#OUTPUT (A)                      #OUTPUT (B)
+1                                1
+12                               22 
+123                              333
+1234                             4444   
+12345                            55555  
+ -------------------------------------------------------------------------------------------------------------
+ #make heart shape pattern
+ for row in range (6):
+  for column in range(7):
+      if  (row == 0 and column % 3 != 0) or (row == 1 and column%3==0) or (row-column == 2) or (row+column == 8):
+         print("*",end="") 
+      else:
+         print(" ",end="")
+  print()              
+ ** ** 
+*  *  *
+*     *
+ *   * 
+  * *  
+   *   
+-------------------------------------------------------------------------------------------------------------	
