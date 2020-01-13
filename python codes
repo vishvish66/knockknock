@@ -129,3 +129,21 @@ for i in range (i,n+1):
   * *  
    *   
 -------------------------------------------------------------------------------------------------------------	
+#prime number between any given num
+lower = int(input("enter lower"))
+higher = int(input("enter higher"))
+for num in range(lower,higher+1):
+   if num>1:
+     for i in range(2,num):
+       if num % i == 0:
+        break
+     else:  
+        print(num)
+-------------------------------------------------------------------------------------------------------------
+#factorial
+num = 10
+result = 1
+ for i in range(num,0,-1):
+ result = result*i
+  print(result)
+  -------------------------------------------------------------------------------------------------------------
