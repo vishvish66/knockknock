@@ -173,3 +173,69 @@ result = 1
  result = result*i
   print(result)
   -------------------------------------------------------------------------------------------------------------
+#ARGUMENTS IN PYTHON
+def sum(a,b):
+    c = a+b
+    c = a-b
+    print(c)
+ sum(4,5)
+ 
+ HOWEVER WHAT IF THERE IS MORE THEN 2 VALUES AND YOUWANNA SUM ALLVALUES ?
+  
+  def sum(a,*b):
+      c=a
+      for i in b:
+      c= c+i
+      print(c)
+  sum(4,5,4,2,4,5,2,2)    
+
+in this output you will get sum of the total value , all the game is >> *
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
