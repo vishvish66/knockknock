@@ -248,9 +248,23 @@ even,odd = count(list)
 print("even: {} and odd :  {}".format(even,odd))
 
 -------------------------------------------------------------------------------------------------------------
+#LAMBDA FIUNCTION(ITS ANONYMOUS FUNCTION)
 
+#FLTER MAP AND REDUCE USING LAMBDA FUNCTION
 
+from functool import reduce
 
+num1 = [4,2,5,6,7,4,8,9,45,3,6,7,2,5,5,5,54,64,52,5,5]
+
+evennums = list(filter(lambda a : a%2==0,num1))
+doubles = list(map(lambda a : a*2,evennums))
+sum = reduce(lambda a,b : a+b,doubles)
+
+print(evennums)  #will filter out all even num from num1 list
+print(doubles)   #will double filter out even num 
+print(sum)       #will give total sum of doubled even num
+
+-------------------------------------------------------------------------------------------------------------
 
 
 
