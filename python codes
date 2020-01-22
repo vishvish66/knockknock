@@ -265,10 +265,35 @@ print(doubles)   #will double filter out even num
 print(sum)       #will give total sum of doubled even num
 
 -------------------------------------------------------------------------------------------------------------
+__init__ method
+
+"class computer:
+   def __init__(self,cpu,ram):
+       self.cpu = cpu
+       self.ram = ram
+   def config(self):
+       print(""i5,16g,1tb"",self.cpu,self.ram)
+
+com1 = computer(""i5"",16)
+com2 = computer(""dell"",8)
+
+com1.config()
+com2.config()"
 
 
+-------------------------------------------------------------------------------------------------------------
+#main
 
+def fun1():
+  print("vv")
+def fun2():
+  print("XX")
 
+def main():
+  fun1()
+  fun2()
+main()      
+-------------------------------------------------------------------------------------------------------------
 
 
 
