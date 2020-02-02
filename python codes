@@ -444,12 +444,105 @@ c1.feature5()
 c1.feature6()
 
 -------------------------------------------------------------------------------------------------------------
+#polymorphism  DUCK TYPING
+
+class school:
+  
+  def execute(self):
+    print("studying")
+    print("playing")
+
+class myownschool:
+  def execute(self):
+    print("better then old")
+    print("AWSOME")        
+  
+class student:
+
+  def books(self,chapter):
+      chapter.execute()
+
+chapter = myownschool()
+
+book1 = student()
+book1.books(chapter)
 
 
+-------------------------------------------------------------------------------------------------------------
+#metodoverloading
+class student:
 
+  def __init__(self,m1,m2):
+    self.m1=m1
+    self.m2=m2
+ 
+  def sum(self,a=None,b=None,c=None):
+    s=0
+    
 
+    if a !=None and b!=None and c!=None:
+         s = a+b+c
+    
+    elif a!=None and b!=None:  
+         s = a+b   
+    else:
+         s=a
+    return s
+s1 = student(3,4)
 
+print(s1.sum(3,3)) 
+-------------------------------------------------------------------------------------------------------------
+#method overwriting
 
+class A:
+      def show(self):
+        print("showA")
+
+class B(A):
+  pass
+
+a1=B()
+a1.show()            
+-------------------------------------------------------------------------------------------------------------
+#itretor
+nums = [5,8,6,9]
+
+it = iter(nums)
+print(it.__next__())
+
+print(next(it))
+
+for i in nums:
+    print(i)
+
+-------------------------------------------------------------------------------------------------------------
+#itretor
+
+#print range 1 to 10
+
+class topten:
+  
+  def __init__(self):
+    self.num = 1
+  
+  def __iter__(self):
+    return self  
+  
+  def __next__(self):
+    
+    if self.num <= 10:
+       val = self.num
+       self.num +=1
+       return val
+    
+    else:
+       raise StopIteration
+
+values = topten()
+
+for i in values:
+  print(i)
+  -------------------------------------------------------------------------------------------------------------
 
 
 
